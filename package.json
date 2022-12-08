@@ -1,19 +1,19 @@
 {
-  "name": "deriv-cms-external-oauth",
-  "version": "0.0.1",
-  "description": "This is the vercel serverless functions for netlify cms external oauth provider",
-  "main": "index.js",
-  "scripts": {
-    "start": "vercel dev",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "eslint '{*,{lib,docs}/**/*,__{tests,mocks}__/**/*}.js' || true",
-    "pretty": "prettier --write '{*,{lib,docs,.github}/**/*,__{tests,mocks}__/**/*}.{json,md,yml,js}'",
-    "fixcode": "npm run pretty",
-    "commit": "git-cz",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
+    "name": "deriv-cms-external-oauth",
+    "version": "0.0.1",
+    "description": "This is the vercel serverless functions for netlify cms external oauth provider",
+    "main": "index.js",
+    "scripts": {
+        "start": "vercel dev",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "lint": "eslint '{*,{lib,docs}/**/*,__{tests,mocks}__/**/*}.js' || true",
+        "pretty": "prettier --write '{*,{lib,docs,.github}/**/*,__{tests,mocks}__/**/*}.{json,md,yml,js}'",
+        "fixcode": "npm run pretty",
+        "commit": "git-cz",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
         "{*,{lib,docs}/**/*,__{tests,mocks}__/**/*}.js": [
             "prettier --write",
             "eslint"
@@ -63,14 +63,14 @@
         "simple-oauth2": "^3.1.0",
         "verror": "^1.10.0"
     },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/binary-com/deriv-cms-external-oauth.git"
-  },
-  "author": "Mohsen Hajibeigloo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/binary-com/deriv-cms-external-oauth/issues"
-  },
-  "homepage": "https://github.com/binary-com/deriv-cms-external-oauth#readme"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/binary-com/deriv-cms-external-oauth.git"
+    },
+    "author": "Mohsen Hajibeigloo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/binary-com/deriv-cms-external-oauth/issues"
+    },
+    "homepage": "https://github.com/binary-com/deriv-cms-external-oauth#readme"
 }
