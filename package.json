@@ -1,0 +1,76 @@
+{
+  "name": "deriv-cms-external-oauth",
+  "version": "0.0.1",
+  "description": "This is the vercel serverless functions for netlify cms external oauth provider",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint '{*,{lib,docs}/**/*,__{tests,mocks}__/**/*}.js' || true",
+    "pretty": "prettier --write '{*,{lib,docs,.github}/**/*,__{tests,mocks}__/**/*}.{json,md,yml,js}'",
+    "fixcode": "npm run pretty",
+    "commit": "git-cz",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+        "{*,{lib,docs}/**/*,__{tests,mocks}__/**/*}.js": [
+            "prettier --write",
+            "eslint"
+        ],
+        "{*,{lib,docs,.github}/**/*,__{tests,mocks}__/**/*}.{json,md,yml}": [
+            "prettier --write"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^12.0.1",
+        "@commitlint/config-conventional": "^12.0.1",
+        "commitizen": "^4.2.3",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jest": "^24.2.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "eslint-plugin-standard": "^5.0.0",
+        "front-matter": "^4.0.2",
+        "husky": "^5.1.3",
+        "jest": "^26.6.3",
+        "lint-staged": "^10.5.4",
+        "marked": "^2.0.1",
+        "prettier": "^2.2.1",
+        "semantic-release": "^19.0.3"
+    },
+    "dependencies": {
+        "convict": "^5.2.0",
+        "debug": "^4.3.1",
+        "escape-string-regexp": "^4.0.0",
+        "mustache": "^4.1.0",
+        "ramda": "^0.27.1",
+        "randomstring": "^1.1.5",
+        "simple-oauth2": "^3.1.0",
+        "verror": "^1.10.0"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binary-com/deriv-cms-external-oauth.git"
+  },
+  "author": "Mohsen Hajibeigloo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binary-com/deriv-cms-external-oauth/issues"
+  },
+  "homepage": "https://github.com/binary-com/deriv-cms-external-oauth#readme"
+}
